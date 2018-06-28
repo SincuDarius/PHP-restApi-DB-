@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "c3eda90f-768c-4467-86d4-5d0c4b6b800e",
+		"name": "Rest_api_phpOnly",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/API/api/post/read.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/javascript"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"PUT request\",\n    \"body\": \"Test if the POST request work\",\n    \"author\": \"Darius Sincu\",\n    \"category_id\": \"1\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost/API/api/post/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"api",
+						"post",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/API/api/post/read.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost/API/api/post/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"api",
+						"post",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/API/api/post/read_single.php?id=4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost/API/api/post/read_single.php?id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"api",
+						"post",
+						"read_single.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/API/api/post/update.php",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/javascript"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\": \"7\",\n \"title\": \"PUT request\",\n \"body\": \"Test if the PUT request work\",\n \"author\": \"Darius Sincu\",\n \"category_id\": \"1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost/API/api/post/update.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"api",
+						"post",
+						"update.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/API/api/post/delete.php?id=2",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/javascript"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"id\":\"2\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost/API/api/post/delete.php?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"API",
+						"api",
+						"post",
+						"delete.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
